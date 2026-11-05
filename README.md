@@ -41,6 +41,10 @@ Sistema web desenvolvido em Java para gerenciamento de atendimentos e solicitaç
 ### Tela de Inserção de Chamados
 
 ![Tela de Inserção de Chamados](imagens/tela-insere-chamados.png)
+
+### Tela de Histórico de Técnicos
+
+![Tela de Histórico de Técnicos](imagens/tela-historico-tecnicos.png)
 ## Autor
 
 **Assis da Costa Pinto Júnior**
