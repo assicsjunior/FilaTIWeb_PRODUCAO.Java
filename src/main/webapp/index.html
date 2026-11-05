@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilaTI - Rodízio de Atendimento</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f4f6f8;
+        color: #333;
+    }
+
+    .cabecalho {
+        background: #1f2937;
+        color: white;
+        padding: 20px 30px;
+    }
+
+    .cabecalho h1 {
+        margin: 0;
+        font-size: 28px;
+    }
+
+    .cabecalho p {
+        margin: 5px 0 0;
+        color: #d1d5db;
+    }
+
+    .container {
+        max-width: 1100px;
+        margin: 30px auto;
+        padding: 0 20px;
+    }
+
+    .proximo {
+        background: white;
+        border-radius: 10px;
+        padding: 25px;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        margin-bottom: 25px;
+    }
+
+    .proximo h2 {
+        margin: 0;
+        color: #555;
+        font-size: 18px;
+    }
+
+    .nome-proximo {
+        font-size: 38px;
+        font-weight: bold;
+        margin: 10px 0;
+        color: #198754;
+    }
+
+    .restantes {
+        font-size: 16px;
+        color: #666;
+    }
+
+    .tabela-container {
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th {
+        background: #374151;
+        color: white;
+        padding: 14px;
+        text-align: left;
+    }
+
+    td {
+        padding: 13px 14px;
+        border-bottom: 1px solid #e5e7eb;
+    }
+
+    tr.proximo-linha {
+        background: #dcfce7;
+        font-weight: bold;
+    }
+
+    tr.atendido {
+        background: #eeeeee;
+        color: #888;
+    }
+
+    .status {
+        font-weight: bold;
+    }
+
+    .status-sim {
+        color: #777;
+    }
+
+    .status-nao {
+        color: #198754;
+    }
+
+    .botao {
+        margin-top: 20px;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 6px;
+        background: #198754;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .botao:hover {
+        background: #146c43;
+    }
+</style>
+
+</head>
+
+<body>
+
+<header class="cabecalho">
+    <h1>FilaTI</h1>
+    <p>Sistema de Rodízio de Atendimento de TI</p>
+</header>
+
+<main class="container">
+
+    <section class="proximo">
+        <h2>PRÓXIMO DA VEZ</h2>
+
+        <div class="nome-proximo">
+            Rommel
+        </div>
+
+        <div class="restantes">
+            Faltam atender nesta rodada: <strong>5</strong>
+        </div>
+
+        <button class="botao">
+            Registrar Atendimento
+        </button>
+    </section>
+
+    <section class="tabela-container">
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Técnico</th>
+                    <th>Status</th>
+                    <th>Almoço</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr class="atendido">
+                    <td>Bruno</td>
+                    <td class="status status-sim">Atendeu</td>
+                    <td>12:00 - 13:00</td>
+                </tr>
+
+                <tr class="atendido">
+                    <td>Jaime</td>
+                    <td class="status status-sim">Atendeu</td>
+                    <td>12:00 - 13:00</td>
+                </tr>
+
+                <tr class="proximo-linha">
+                    <td>Rommel</td>
+                    <td class="status status-nao">PRÓXIMO</td>
+                    <td>12:00 - 13:00</td>
+                </tr>
+
+                <tr>
+                    <td>Sanzio</td>
+                    <td>Aguardando</td>
+                    <td>13:00 - 14:00</td>
+                </tr>
+
+                <tr>
+                    <td>Maycon</td>
+                    <td>Aguardando</td>
+                    <td>13:00 - 14:00</td>
+                </tr>
+
+                <tr>
+                    <td>Assis</td>
+                    <td>Aguardando</td>
+                    <td>13:00 - 14:00</td>
+                </tr>
+
+                <tr>
+                    <td>Daniel</td>
+                    <td>Aguardando</td>
+                    <td>13:00 - 14:00</td>
+                </tr>
+
+                <tr class="atendido">
+                    <td>Luan</td>
+                    <td class="status status-sim">Atendeu</td>
+                    <td>12:00 - 13:00</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+</main>
+
+</body>
+</html>
