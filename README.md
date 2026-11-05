@@ -32,19 +32,19 @@ Sistema web desenvolvido em Java para gerenciamento de atendimentos e solicitaç
 4. Configurar o servidor de aplicação.
 5. Executar o projeto.
 
+
+
 ## Telas do sistema
 
 ### Tela de Login
-
-![Tela de Login](imagens/tela-login.png)
+![Tela de Login](./imagens/tela-login.png)
 
 ### Tela de Inserção de Chamados
-
-![Tela de Inserção de Chamados](imagens/tela-insere-chamados.png)
+![Tela de Inserção de Chamados](./imagens/tela-insere-chamados.png)
 
 ### Tela de Histórico de Técnicos
+![Tela de Histórico de Técnicos](./imagens/tela-historico-tecnicos.png)
 
-![Tela de Histórico de Técnicos](imagens/tela-historico-tecnicos.png)
 ## Autor
 
 **Assis da Costa Pinto Júnior**
